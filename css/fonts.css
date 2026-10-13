@@ -1,0 +1,265 @@
+/* Play: CSS classes */
+.play-regular {
+	font-family: "Play", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.play-bold,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Play", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Blinker: CSS classes */
+.blinker-thin {
+	font-family: "Blinker", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.blinker-extralight {
+	font-family: "Blinker", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+.blinker-light {
+	font-family: "Blinker", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.blinker-regular {
+	font-family: "Blinker", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.blinker-semibold {
+	font-family: "Blinker", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.blinker-bold {
+	font-family: "Blinker", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.blinker-extrabold {
+	font-family: "Blinker", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+.blinker-black {
+	font-family: "Blinker", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+/* Thasadith: CSS classes */
+.thasadith-regular {
+	font-family: "Thasadith", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.thasadith-bold {
+	font-family: "Thasadith", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.thasadith-regular-italic {
+	font-family: "Thasadith", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.thasadith-bold-italic {
+	font-family: "Thasadith", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+/* Almarai: CSS classes */
+.almarai-light {
+	font-family: "Almarai", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.almarai-regular {
+	font-family: "Almarai", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.almarai-bold {
+	font-family: "Almarai", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.almarai-extrabold {
+	font-family: "Almarai", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+/* Ubuntu: CSS classes */
+.ubuntu-light {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.ubuntu-regular {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.ubuntu-medium {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.ubuntu-bold {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.ubuntu-light-italic {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.ubuntu-regular-italic {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.ubuntu-medium-italic {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.ubuntu-bold-italic {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+/* Ubuntu Condensed: CSS class */
+.ubuntu-condensed-regular {
+	font-family: "Ubuntu Condensed", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Baumans: CSS class */
+.baumans-regular {
+	font-family: "Baumans", system-ui;
+	font-weight: 400;
+	font-style: normal;
+}
+
+:root {
+	--md-primary-0: #000000;
+	--md-primary-10: #130000;
+	--md-primary-20: #320200;
+	--md-primary-25: #420c00;
+	--md-primary-30: #531800;
+	--md-primary-35: #652400;
+	--md-primary-40: #773000;
+	--md-primary-50: #9c4900;
+	--md-primary-60: #c36300;
+	--md-primary-70: #de8635;
+	--md-primary-80: #faa967;
+	--md-primary-90: #ffcc93;
+	--md-primary-95: #ffdea9;
+	--md-primary-98: #ffe9b6;
+	--md-primary-99: #ffedbb;
+	--md-primary-100: #fff0bf;
+
+	--md-secondary-0: #000000;
+	--md-secondary-10: #090200;
+	--md-secondary-20: #231104;
+	--md-secondary-25: #301c0c;
+	--md-secondary-30: #3e2816;
+	--md-secondary-35: #4d3421;
+	--md-secondary-40: #5c412c;
+	--md-secondary-50: #7c5b42;
+	--md-secondary-60: #9d775a;
+	--md-secondary-70: #ba967b;
+	--md-secondary-80: #d7b69e;
+	--md-secondary-90: #f5d8c2;
+	--md-secondary-95: #ffe9d4;
+	--md-secondary-98: #fff3df;
+	--md-secondary-99: #fff6e3;
+	--md-secondary-100: #fffae6;
+
+	--md-tertiary-0: #000000;
+	--md-tertiary-10: #030400;
+	--md-tertiary-20: #131a00;
+	--md-tertiary-25: #1e2600;
+	--md-tertiary-30: #2a3300;
+	--md-tertiary-35: #364000;
+	--md-tertiary-40: #434e00;
+	--md-tertiary-50: #5d6b08;
+	--md-tertiary-60: #798a22;
+	--md-tertiary-70: #97a852;
+	--md-tertiary-80: #b7c77b;
+	--md-tertiary-90: #d8e7a4;
+	--md-tertiary-95: #e8f7b8;
+	--md-tertiary-98: #f3ffc5;
+	--md-tertiary-99: #f6ffc9;
+	--md-tertiary-100: #f9ffcd;
+
+	--md-neutral-0: #000000;
+	--md-neutral-10: #040302;
+	--md-neutral-20: #181514;
+	--md-neutral-25: #24211f;
+	--md-neutral-30: #302d2b;
+	--md-neutral-35: #3d3a38;
+	--md-neutral-40: #4a4745;
+	--md-neutral-50: #656360;
+	--md-neutral-60: #837f7d;
+	--md-neutral-70: #a19e9b;
+	--md-neutral-80: #c0bdbb;
+	--md-neutral-90: #e1dddb;
+	--md-neutral-95: #f1eeeb;
+	--md-neutral-98: #fbf8f5;
+	--md-neutral-99: #fefbf8;
+	--md-neutral-100: #fffefc;
+
+	--md-error-0: #010000;
+	--md-error-10: #1b0000;
+	--md-error-20: #3f0000;
+	--md-error-25: #520000;
+	--md-error-30: #650000;
+	--md-error-35: #790000;
+	--md-error-40: #8e0002;
+	--md-error-50: #b81519;
+	--md-error-60: #e4312e;
+	--md-error-70: #ff6357;
+	--md-error-80: #ff8d7f;
+	--md-error-90: #ffb5a7;
+	--md-error-95: #ffc9bb;
+	--md-error-98: #ffd5c7;
+	--md-error-99: #ffd9cb;
+	--md-error-100: #ffddcf;
+}
