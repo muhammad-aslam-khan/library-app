@@ -41,7 +41,8 @@ h4 {
 	position: relative; /* For positioning of close button relative to this div. */
 
 	flex: 0 0 180px;
-	height: 180px;
+	height: auto;
+	min-height: 180px;
 	padding: 20px;
 
 	display: flex;
