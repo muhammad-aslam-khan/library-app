@@ -38,7 +38,7 @@ h4 {
 
 /* Styling of book-card and its components */
 .book-card {
-	position: relative; /*For positioning of close button relative to this div.*/
+	position: relative; /* For positioning of close button relative to this div. */
 
 	flex: 0 0 180px;
 	height: 180px;
