@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/style.css" />
-		<link rel="stylesheet" href="./css/fonts.css" />
-		<script src="./script.js" defer></script>
+		<link rel="stylesheet" href="./src/style.css" />
+		<link rel="stylesheet" href="./src/fonts.css" />
+		<script src="./src/script.js" defer></script>
 		<title>Library</title>
-		<link rel="shortcut icon" href="./images/books.svg" type="image/svg" />
+		<link rel="shortcut icon" href="./src/books.svg" type="image/svg" />
 
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +18,7 @@
 		/>
 	</head>
 	<body>
-		<!-- <button class="add-book">Add Book</button> -->
+		<button class="open-modal">Add New Book</button>
 		<div class="container">
 			<!-- <div class="book-card blinker-regular font" id="book-1">
 				<div>
@@ -38,6 +38,50 @@
 				<button class="blinker-regular">Edit</button>
 			</div> -->
 		</div>
-		<dialog></dialog>
+		<dialog closedby="none">
+			<form action="" method="get" class="blinker-light font">
+				<button class="close-modal" aria-label="close modal">×</button>
+				<div>
+					<label for="book-title">Book Title</label>
+					<input
+						type="text"
+						name="book-title"
+						id="book-title"
+						required
+						placeholder="Book"
+						class="almarai-bold"
+					/>
+				</div>
+				<div>
+					<label for="author">Author</label>
+					<input
+						type="text"
+						name="author"
+						id="author"
+						required
+						placeholder="Author"
+						class="almarai-bold"
+					/>
+				</div>
+				<div>
+					<label for="pages">Pages</label>
+					<input
+						type="number"
+						name="pages"
+						id="pages"
+						value="200"
+						required
+						class="almarai-bold"
+					/>
+				</div>
+				<div>
+					<label for="read">Have you read it yet?</label>
+					<input type="checkbox" name="read" id="read" />
+				</div>
+				<button type="submit" id="add-new-book" class="ubuntu-bold">
+					Add
+				</button>
+			</form>
+		</dialog>
 	</body>
 </html>
