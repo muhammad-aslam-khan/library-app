@@ -36,12 +36,64 @@ const book4 = create_book(
 	crypto.randomUUID(),
 );
 
-const modal = document.getElementsByTagName("dialog")[0]; // Picking first element from returned list
-const open_modal_btn = document.getElementsByClassName("open-modal")[0];
-open_modal_btn.addEventListener("click", () => modal.show());
+const add_book_btn = document.getElementById("add-new-book-btn");
+add_book_btn.addEventListener("click", (e) => {
+	e.preventDefault();
+	const modal = document.getElementsByTagName("dialog")[0];
+	const form = document.getElementsByTagName("form")[0];
+	let form_data = new FormData(form);
+	let entries = form_data.entries(); // To get all entries
+	let keys = form_data.keys(); // To get akk keys (form elements names)
+	let values = form_data.values(); // To get all form element values
+	let values_array = [];
+	for (const entry of values) {
+		let val = entry == "true" ? true : entry;
+		val != "" ? values_array.push(val) : "";
+		// console.log(val);
+	}
+	if (values_array.length > 2) {
+		console.table(values_array);
+		create_book(
+			values_array[0],
+			values_array[1],
+			values_array[2],
+			(read_status = values_array[3]),
+			(id = crypto.randomUUID()),
+		);
 
-const close_modal_btn = document.getElementsByClassName("close-modal")[0];
-close_modal_btn.addEventListener("click", () => modal.close());
+		display_book(
+			library.at(-1).title,
+			library.at(-1).author,
+			library.at(-1).pages,
+			library.at(-1).read,
+			library.at(-1).id,
+		);
+		console.log(library.at(-1).id);
+
+		form.reset();
+		modal.close();
+	}
+
+	// form_data = new FormData(form);
+	// values = form_data.values(); // To get all form element values
+	// for (const entry of values) {
+	// 	let val = entry == "true" ? true : entry;
+	// 	console.log(val);
+	// }
+
+	// const book_name = document.getElementById("book-title");
+	// const author_name = document.getElementById("author");
+	// const pages = document.getElementById("pages");
+	// const read_status = document.getElementById("read");
+	// console.log(book_name.value, author_name.value, pages.value, read_status.checked);
+});
+
+// const modal = document.getElementsByTagName("dialog")[0]; // Picking first element from returned list
+// const open_modal_btn = document.getElementsByClassName("open-modal")[0];
+// open_modal_btn.addEventListener("click", () => modal.show());
+
+// const close_modal_btn = document.getElementsByClassName("close-modal")[0];
+// close_modal_btn.addEventListener("click", () => modal.close());
 
 function create_book(title_info, author_info, pages, read_status = false, id) {
 	const book = new Book(title_info, author_info, pages, read_status, id);

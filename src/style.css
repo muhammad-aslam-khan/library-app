@@ -127,8 +127,8 @@ h4.author {
 
 /* Modal Styling */
 dialog {
-	position: absolute;
-	top: 30%;
+	/* position: absolute; */
+	/* top: 30%; */
 
 	width: 50%;
 
@@ -159,7 +159,7 @@ form input[type="number"] {
 	padding: 2px 4px;
 	color: var(--primary-font);
 }
-form #add-new-book {
+form #add-new-book-btn {
 	width: 50%;
 	border: 1px solid var(--secondary-10);
 	color: var(--secondary-70);
