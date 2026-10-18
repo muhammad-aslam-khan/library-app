@@ -24,6 +24,8 @@
 		<div class="container"></div>
 		<dialog closedby="any" id="new-book-modal">
 			<form action="#" method="dialog" class="blinker-light font">
+				<h2 id="add-new-book-heading">Add New Book</h2>
+				<h2 id="edit-book-heading">Edit Book</h2>
 				<button
 					type="button"
 					commandfor="new-book-modal"
@@ -73,6 +75,9 @@
 				<button type="submit" id="add-new-book-btn" class="ubuntu-bold">
 					Add
 				</button>
+				<button type="submit" id="update-book-btn" class="ubuntu-bold">
+					Update
+				</button>
 			</form>
 		</dialog>
 	</body>
@@ -80,15 +85,14 @@
 
 <!-- <div class="book-card blinker-regular font" id="book-1">
 	<div>
-		<button class="close-btn" aria-label="Remove book">×</button>
+		<button class="remove-book" aria-label="Remove book">×</button>
 		<div>
 			<h3 class="book-title">Book Title</h3>
 			<h4 class="author">By Author</h4>
 		</div>
 		<div><span>Pages</span><span>538</span></div>
 		<div>
-			<span>Books is read!</span
-			><input type="checkbox" name="is-read" id="is-read" />
+			<label for="is-read">Not read yet!</label><input type="checkbox" name="is-read" id="is-read" />
 		</div>
 	</div>
 	<button class="blinker-regular">Edit</button>

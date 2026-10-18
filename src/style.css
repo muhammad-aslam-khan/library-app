@@ -12,6 +12,7 @@ body {
 	--primary-font: var(--secondary);
 	--secondary-font: var(--secondary-70);
 }
+h2,
 h3,
 h4 {
 	margin: 0;
@@ -73,12 +74,13 @@ h4.author {
 	flex-direction: column;
 	gap: 10px;
 }
-.book-card > div > div:has(span) {
-	/* Targeting the checkbox div */
+.book-card > div > div:has(span),
+.book-card > div > div:has(label) {
+	/* Targeting the pages and checkbox divs */
 	display: flex;
 	justify-content: space-between;
 }
-.close-btn,
+.remove-book-btn,
 .close-modal {
 	position: absolute;
 	right: 5px;
@@ -87,12 +89,12 @@ h4.author {
 
 	color: var(--secondary-50);
 }
-.close-btn:hover,
+.remove-book-btn:hover,
 .close-modal:hover {
 	color: red;
 	font-weight: 600;
 }
-.close-btn:active,
+.remove-book-btn:active,
 .close-modal:active {
 	color: var(--secondary-50);
 	font-weight: 500;
@@ -127,8 +129,8 @@ h4.author {
 
 /* Modal Styling */
 dialog {
-	/* position: absolute; */
-	/* top: 30%; */
+	position: absolute;
+	top: 10%;
 
 	width: 50%;
 
@@ -159,7 +161,8 @@ form input[type="number"] {
 	padding: 2px 4px;
 	color: var(--primary-font);
 }
-form #add-new-book-btn {
+form #add-new-book-btn,
+form #update-book-btn {
 	width: 50%;
 	border: 1px solid var(--secondary-10);
 	color: var(--secondary-70);
