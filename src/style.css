@@ -175,7 +175,7 @@ dialog {
 	position: absolute;
 	top: 10%;
 
-	width: 50%;
+	width: 400px;
 
 	border-radius: 10px;
 	border: 2px dashed var(--secondary);

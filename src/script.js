@@ -243,7 +243,7 @@ function create_btn(btn) {
 			edit_book_heading.style.display = "block";
 			update_book_btn.style.display = "block";
 
-			modal.show();
+			modal.showModal();
 
 			title_input.value = title;
 			author_input.value = author;
