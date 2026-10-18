@@ -1,10 +1,7 @@
-body {
-	background-color: antiquewhite;
-}
 :root {
-	--primary: orange;
-	--primary-50: rgba(255, 166, 0, 0.5);
-	--primary-10: rgba(255, 166, 0, 0.1);
+	--primary: brown;
+	--primary-50: rgba(165, 42, 42, 0.5);
+	--primary-10: rgba(165, 42, 42, 0.1);
 	--secondary: rgb(50, 47, 47);
 	--secondary-70: rgba(50, 47, 47, 0.7);
 	--secondary-50: rgba(50, 47, 47, 0.5);
@@ -12,18 +9,69 @@ body {
 	--primary-font: var(--secondary);
 	--secondary-font: var(--secondary-70);
 }
+
+/* Resetting */
+body {
+	background-color: antiquewhite;
+	margin: 0;
+}
 h2,
 h3,
 h4 {
 	margin: 0;
 }
-.container button,
-dialog button {
+button {
 	outline: none;
 	border: none;
 	background-color: rgba(255, 255, 255, 0);
 	cursor: pointer;
 }
+
+/* Header Styling */
+header {
+	background-color: brown;
+	padding: 20px;
+	position: sticky;
+	top: 0;
+	z-index: 3;
+}
+header > div {
+	color: white;
+	font-size: 1.4rem;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+header img {
+	width: 1.8rem;
+}
+header div:has(img),
+header div:has(button) {
+	display: flex;
+	gap: 10px;
+}
+header button {
+	outline: none;
+	border: none;
+	background-color: beige;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	font-size: 1.5rem;
+	border-radius: 5px;
+}
+header button:hover {
+	color: white;
+	border: 1px solid beige;
+	background-color: rgba(240, 248, 255, 0);
+}
+header button:active {
+	color: white;
+	border: 1px solid beige;
+	background-color: rgba(255, 228, 196, 0.284);
+}
+
 .container {
 	width: min(100%, 800px);
 	padding: 30px 0;
@@ -112,20 +160,15 @@ h4.author {
 	border-radius: 5px;
 }
 .book-card > button:hover {
-	background-color: var(--primary-50);
-	box-shadow: 2px 3px 6px var(--primary-10);
+	background-color: white;
+	border: 0.1px solid var(--primary-font);
+	box-shadow: none;
 	font-weight: 600;
 	color: var(--primary-font);
 }
 .book-card > button:active {
-	background-color: var(--secondary-10);
-	color: white;
+	box-shadow: 1px 1px 2px 3px var(--secondary-10);
 }
-
-/* .container,
-.book-card > div:first-child * {
-	border: 1px solid;
-} */
 
 /* Modal Styling */
 dialog {
@@ -149,6 +192,11 @@ dialog > form {
 	right: 10px;
 	top: 5px;
 }
+form h2 {
+	text-align: center;
+	border-bottom: 1px solid var(--secondary-50);
+	padding-bottom: 5px;
+}
 form > div {
 	display: flex;
 	justify-content: space-between;
@@ -161,13 +209,21 @@ form input[type="number"] {
 	padding: 2px 4px;
 	color: var(--primary-font);
 }
-form #add-new-book-btn,
-form #update-book-btn {
+form > button:nth-of-type(n + 2) {
 	width: 50%;
-	border: 1px solid var(--secondary-10);
-	color: var(--secondary-70);
+	border: 1px solid var(--primary-font);
+	color: var(--primary-font);
 	font-weight: 600px;
 	margin: 10px auto 0;
 	padding: 5px 0 7px 0;
 	border-radius: 4px;
+	/* box-shadow: 1px 1px 2px 4px antiquewhite; */
+}
+form button:nth-of-type(n + 2):hover {
+	background-color: antiquewhite;
+	/* box-shadow: 1px 1px 2px 4px antiquewhite; */
+}
+form button:nth-of-type(n + 2):active {
+	background-color: white;
+	box-shadow: 1px 1px 2px 4px antiquewhite;
 }

@@ -18,9 +18,23 @@
 		/>
 	</head>
 	<body>
-		<button type="button" commandfor="new-book-modal" command="show-modal">
-			Add New Book
-		</button>
+		<header class="play-bold font">
+			<div>
+				<div>
+					<img src="./src/books.svg" alt="books icon" />My Little
+					Library
+				</div>
+				<div>
+					<button
+						type="button"
+						commandfor="new-book-modal"
+						command="show-modal"
+					>
+						+
+					</button>
+				</div>
+			</div>
+		</header>
 		<div class="container"></div>
 		<dialog closedby="any" id="new-book-modal">
 			<form action="#" method="dialog" class="blinker-light font">

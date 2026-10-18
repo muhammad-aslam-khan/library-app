@@ -165,6 +165,9 @@ function create_book(book_title, book_author, pages, read_status = false, id) {
 	library.push(book);
 }
 
+// Creates and then displays the .book-card on the DOM, it creates the card
+// piece by piece by calling other helper method on the way, they are
+// defined after this function.
 function display_book(book_title, book_author, pages, read_status = false, id) {
 	// Reference of main container
 	const container = document.querySelector(".container");
