@@ -5,10 +5,11 @@ function Book(title, author, pages, read, id) {
 	this.pages = pages;
 	this.read = read;
 	this.id = id;
-	this.update_read_status = function update_read_status(read_status) {
-		this.read = read_status;
-	};
 }
+// Defined read_status update method on 'prototype' property of Book constructor
+Book.prototype.toggle_read = function (read_status) {
+	this.read = read_status;
+};
 
 // These are the books already in created and pushed in library
 const book1 = create_book(
@@ -306,7 +307,7 @@ function create_read_status_div(read_status, book_title) {
 		const read_label = selected_book_card.getElementsByTagName("label")[0];
 		read_label.textContent = read_status ? "Book is read" : "Not read Yet!";
 
-		selected_book_object.update_read_status(read_status); // Calling the method ob Book object
+		selected_book_object.toggle_read(read_status); // Calling the method ob Book object
 		// console.log(selected_book_object)
 	});
 
