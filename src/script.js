@@ -1,4 +1,8 @@
 const library = new Array();
+/*
+// First we were using the constructor function and then we refractor 
+// the code to use class syntax. The implementation stays the same. 
+
 function Book(title, author, pages, read, id) {
 	this.title = title;
 	this.author = author;
@@ -6,10 +10,28 @@ function Book(title, author, pages, read, id) {
 	this.read = read;
 	this.id = id;
 }
+
 // Defined read_status update method on 'prototype' property of Book constructor
 Book.prototype.toggle_read = function (read_status) {
 	this.read = read_status;
 };
+
+*/
+
+// Refractor code, changing the constructor function into class
+class Book {
+	constructor(title, author, pages, read, id) {
+		this.title = title;
+		this.author = author;
+		this.pages = pages;
+		this.read = read;
+		this.id = id;
+	}
+
+	toggle_read(read_status) {
+		this.read = read_status;
+	}
+}
 
 // These are the books already in created and pushed in library
 const book1 = create_book(
